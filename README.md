@@ -11,7 +11,7 @@ We use chest X-ray image datasets labeled for:
 - **Pneumonia**
 - **COVID-19**
 
-🔗 **[Download Dataset].([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))** 
+🔗 ***([Download Dataset](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))** 
 
 Recommended Kaggle datasets:
 - https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia
@@ -71,7 +71,8 @@ pneumonia-covid-app/
 
 3. **Train the model**
    ```
-   Pnuemonia Covid Model Building.ipynb
+   Run all command one by one of Pnuemonia Covid Model Building.ipynb
+   (Else you can use papermill)
    ```
 
 4. **Run the Flask App**
