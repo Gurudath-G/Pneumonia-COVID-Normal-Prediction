@@ -1,17 +1,31 @@
+# 🧠 Pneumonia and COVID-19 Prediction Using Deep Learning (End-to-End Flask App)
 
-# Pneumonia and COVID-19 Prediction Using Deep Learning 🧠🩻
+This is a full-stack deep learning project that predicts **Pneumonia**, **COVID-19**, or **Normal** conditions from chest X-ray images. It includes data preprocessing, CNN model training, evaluation, and a fully functional **Flask web app** for real-time image classification.
 
-This project utilizes deep learning techniques to classify chest X-ray images into three categories:
+---
+
+## 📁 Dataset
+
+We use chest X-ray image datasets labeled for:
 - **Normal**
 - **Pneumonia**
 - **COVID-19**
 
-## 📁 Dataset
+🔗 **[Download Dataset]([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))**  
+*(Replace this link with the actual dataset location from Kaggle, Google Drive, etc.)*
 
-We used a labeled dataset of chest X-ray images consisting of three classes. You can download the dataset from the link below:
+Recommended Kaggle datasets:
+- https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia
+- https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
-🔗 **[Download Dataset](https://your-dataset-link-here.com)**  
-*(Replace this link with your actual dataset source — e.g., from [Kaggle](https://www.kaggle.com/), Google Drive, or any cloud storage)*
+---
+
+## 🚀 Features
+
+- ✅ Deep Learning model (CNN or transfer learning like VGG16/ResNet50)
+- ✅ Accuracy and performance metrics visualization
+- ✅ Flask-based web interface to upload and predict X-ray images
+- ✅ Real-time results with image preview
 
 ---
 
@@ -19,27 +33,33 @@ We used a labeled dataset of chest X-ray images consisting of three classes. You
 
 - **Python**
 - **TensorFlow / Keras**
-- **NumPy, Pandas, Matplotlib**
-- **OpenCV**
-- **Flask (for web deployment)** *(optional)*
+- **OpenCV, NumPy, Pandas**
+- **Flask (for web app)**
+- **HTML/CSS/Bootstrap (Frontend)**
 
 ---
 
-## 🧪 Model Architecture
+## 🖼️ Folder Structure
 
-We use a Convolutional Neural Network (CNN)-based architecture with the following features:
-- Multiple Conv2D and MaxPooling2D layers
-- Dropout for regularization
-- Fully connected Dense layers
-- `Softmax` for multiclass classification
-
-Alternatively, pre-trained models such as **VGG16**, **ResNet50**, or **EfficientNet** can be fine-tuned for better performance.
+```
+pneumonia-covid-app/
+├── static/
+│   └── uploaded/                               # Uploaded images
+├── templates/
+│   └── index.html                              # Main web page
+├── dataset/                                    # Training and test data
+├── model.keras                                 # Trained model
+├── app.py                                      # Flask application
+├── Pnuemonia Covid Model Building.ipynb        # To train and evaluate model
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 🚀 How to Run
+## 🧪 How to Run
 
-1. **Clone the repository**
+1. **Clone the repo**
    ```bash
    git clone https://github.com/your-username/pneumonia-covid-prediction.git
    cd pneumonia-covid-prediction
@@ -50,39 +70,24 @@ Alternatively, pre-trained models such as **VGG16**, **ResNet50**, or **Efficien
    pip install -r requirements.txt
    ```
 
-3. **Prepare dataset**
-   - Download and extract the dataset
-   - Organize the folder structure like:
-     ```
-     dataset/
-       ├── train/
-       │   ├── NORMAL/
-       │   ├── PNEUMONIA/
-       │   └── COVID/
-       ├── test/
-       │   ├── NORMAL/
-       │   ├── PNEUMONIA/
-       │   └── COVID/
-     ```
-
-4. **Train the model**
-   ```bash
-   python train.py
+3. **Train the model**
+   ```
+   Pnuemonia Covid Model Building.ipynb
    ```
 
-5. **Evaluate the model**
-   ```bash
-   python evaluate.py
-   ```
-
-6. *(Optional)* **Run the Flask app**
+4. **Run the Flask App**
    ```bash
    python app.py
    ```
 
+5. **Open in browser**
+   ```
+   http://127.0.0.1:5000/
+   ```
+
 ---
 
-## 📊 Results
+## 📊 Model Performance
 
 | Metric      | Value     |
 |-------------|-----------|
@@ -91,39 +96,35 @@ Alternatively, pre-trained models such as **VGG16**, **ResNet50**, or **Efficien
 | Recall      | ~93%      |
 | F1-Score    | ~93%      |
 
-*(Numbers may vary depending on dataset and model used)*
-
 ---
 
-## 📸 Sample Predictions
+## 📸 Demo
 
-![Sample 1](samples/normal_xray.jpg)  
-*Prediction: Normal*
-
-![Sample 2](samples/pneumonia_xray.jpg)  
-*Prediction: Pneumonia*
+![Web App Screenshot](static/demo.png)  
+*Upload a chest X-ray to see real-time prediction results.*
 
 ---
 
 ## 🙌 Acknowledgements
 
-- Dataset from [Kaggle](https://www.kaggle.com/)
-- Inspiration from COVID-Net and related academic research
+- Dataset credits: [Kaggle](https://www.kaggle.com/)
+- Flask framework: https://flask.palletsprojects.com/
+- Inspiration from COVID-Net and similar research
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License.
 
 ---
 
-## 🔗 Connect
+## ⭐ Show Some Love
 
-If you like this project, feel free to ⭐ the repo and connect with me!
+If you found this helpful, consider giving a ⭐ on [GitHub](https://github.com/your-username/pneumonia-covid-prediction)!
 
 ```
 
 ---
 
-Would you like me to generate a sample `train.py` or `app.py` file for this project too?
+Let me know if you'd like me to generate any part of the code for you (`app.py`, `train.py`, or HTML template).
