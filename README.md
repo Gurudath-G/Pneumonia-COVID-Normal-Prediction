@@ -11,7 +11,7 @@ We use chest X-ray image datasets labeled for:
 - **Pneumonia**
 - **COVID-19**
 
-🔗 **[Download Dataset]([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))**  
+🔗 **[Download Dataset].([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))**  
 *(Replace this link with the actual dataset location from Kaggle, Google Drive, etc.)*
 
 Recommended Kaggle datasets:
