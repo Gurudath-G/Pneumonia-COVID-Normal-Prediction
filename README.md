@@ -96,6 +96,14 @@ pneumonia-covid-app/
 | Recall      | ~93%      |
 | F1-Score    | ~93%      |
 
+
+---
+
+## 🖼️ Demo
+
+![Web App Screenshot](static/uploads/Demo.png)  
+*Upload an Chest X-ray Image to get Covid-19 or Pnuemonia prediction instantly.*
+
 ---
 
 ## 🙌 Acknowledgements
