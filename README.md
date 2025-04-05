@@ -11,8 +11,7 @@ We use chest X-ray image datasets labeled for:
 - **Pneumonia**
 - **COVID-19**
 
-🔗 **[Download Dataset].([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))**  
-*(Replace this link with the actual dataset location from Kaggle, Google Drive, etc.)*
+🔗 **[Download Dataset].([https://your-dataset-link-here.com](https://www.kaggle.com/datasets/sachinkumar413/covid-pneumonia-normal-chest-xray-images))** 
 
 Recommended Kaggle datasets:
 - https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia
@@ -95,13 +94,6 @@ pneumonia-covid-app/
 | Precision   | ~94%      |
 | Recall      | ~93%      |
 | F1-Score    | ~93%      |
-
----
-
-## 📸 Demo
-
-![Web App Screenshot](static/demo.png)  
-*Upload a chest X-ray to see real-time prediction results.*
 
 ---
 
